@@ -1,0 +1,28 @@
+baseurl = "http://localhost/"
+languageCode = "nl-nl"
+title = "Team Zwitserleven"
+theme = "tzwl"
+
+[Author]
+	name = "Ewout Prangsma"
+	email = "info@teamzwitserleven.nl"
+
+[Permalinks]
+	#blog = "/:year/:month/:filename/"
+	#code = "/:filename/"
+
+[Taxonomies]
+	tag = "tags"
+	series = "series"
+	series-desc = "series-desc"
+
+[params]
+	description = "Trein plezier in smallspoor"
+	github = "https://github.com/teamzwitserleven"
+	theme = "theme-base-0b"
+
+[[menu.main]]
+    name = "Foto's"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -100
+    url = "/photos/"
