@@ -6,7 +6,7 @@ COMMIT := $(shell git rev-parse --short HEAD)
 all: build
 
 clean:
-	rm -Rf public
+	rm -Rf public $(PUBLISH_PATH)
 
 build:
 	hugo
