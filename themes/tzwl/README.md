@@ -1,99 +1,104 @@
-# Hyde
+# Strata Theme
 
-Hyde is a brazen two-column [hugo](http://hugo.spf13.com) theme based on the [Jekyll](http://jekyllrb.com) theme of the same name.
-It pairs a prominent sidebar with uncomplicated content.
+The Strata theme is a responsive and minimal one-page-portfolio based on the self-named template made by [HTML5UP](//html5up.net/). Noteworthy features of this Hugo theme are a custom about section, a portfolio with gallery for photographs or client works and a contact form.
 
-![Hyde screenshot](https://f.cloud.github.com/assets/98681/1831228/42af6c6a-7384-11e3-98fb-e0b923ee0468.png)
+![Screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-strata-theme/dev/images/screenshot.png)
 
 
 ## Contents
 
-- [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
-  - [Sticky sidebar content](#sticky-sidebar-content)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
-- [Development](#development)
-- [Author](#author)
-- [Ported by](#ported-by)
+- [Installation](#installation)
+- [Getting started](#getting-started)
+    - [The config file](#the-config-file) 
+    - [Sidebar](#sidebar)
+    - [Build up your portfolio](#build-up-your-portfolio)
+    - [Make the contact form working](#make-the-contact-form-working)
+    - [Nearly finished](#nearly-finished)
+- [Contributing](#contributing)
 - [License](#license)
+- [Annotations](#annotations)
 
 
-## Options
+## Installation
 
-Hyde includes some customizable options, typically applied via classes on the `<body>` element.
+Inside the folder of your Hugo site run:
+
+    $ mkdir themes
+    $ cd themes
+    $ git clone git@github.com:digitalcraftsman/hugo-strata-theme.git
+
+For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
 
-### Sidebar menu
+## Getting started
 
-Create a list of nav links in the sidebar by assigning "menu=main" in the front matter.
+After installing the Strata Theme successfully it requires a just a few more steps to get your site finally running.
 
 
-### Sticky sidebar content
+### The config file
 
-By default Hyde ships with a sidebar that affixes it's content to the bottom of the sidebar. You can optionally disabled this by removing the `.sidebar-sticky` class from the sidebar's `.container`. Sidebar content will then normally flow from top to bottom.
+Take a look inside the [`exampleSite`](https://github.com/digitalcraftsman/hugo-strata-theme/tree/dev/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml). To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to customize this theme as you like.
 
-```html
-<!-- Default sidebar -->
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    ...
-  </div>
-</div>
+### Sidebar
 
-<!-- Modified sidebar -->
-<div class="sidebar">
-  <div class="container">
-    ...
-  </div>
-</div>
+The sidebar provides a small overview of who you are. One of the first elements that will be spottet is the avatar in the sidebar. Replace it with a nice picture of you by either swapping the [`avatar.jpg`](https://github.com/digitalcraftsman/hugo-strata-theme/blob/dev/static/images/avatar.jpg) or by setting a new path to an image in [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml):
+
+```toml
+[params.sidebar]
+    avatar = "avatar.jpg"
 ```
 
+The path is relative to [`./static/images`](https://github.com/digitalcraftsman/hugo-strata-theme/tree/dev/static/images).
 
-### Themes
+Last but not least add a few words about you and your work.
 
-Hyde ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
 
-![Hyde in red](https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png)
+### Build up your portfolio
 
-There are eight themes available at this time.
+As photograph or freelancer, your most important piece in the resume is the work you've done. Within the [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml) add the following snippet to add a new item to the gallery:
 
-![Hyde theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
+```toml
+[params.portfolio]
 
-To use a theme, add anyone of the available theme classes to the `<body>` element in the `default.html` layout, like so:
-
-```html
-<body class="theme-base-08">
-  ...
-</body>
+        # The images and thumbnails are stored under static/images
+        # Create and change subfolders as you like
+        [[params.portfolio.gallery]]
+            image = "fulls/01.jpg"
+            thumb = "thumbs/01.jpg"
+            title = "Lorem ipsum dolor."
+            description = "Lorem ipsum dolor sit amet."
 ```
 
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/hyde/blob/master/public/css/hyde.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
+### Make the contact form working
 
-### Reverse layout
+Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
 
-![Hyde with reverse layout](https://f.cloud.github.com/assets/98681/1831230/42b0d3ac-7384-11e3-8d54-2065afd03f9e.png)
+1. Enter your email address under 'email' in the [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml)
+2. Upload the generated site to your server
+3. Send a dummy email yourself to confirm your account
+4. Click the confirm link in the email from [formspree.io](//formspree.io/)
+5. You're done. Happy mailing!
 
-Hyde's page orientation can be reversed with a single class.
 
-```html
-<body class="layout-reverse">
-  ...
-</body>
-```
+### Nearly finished
 
-## Author
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
+In order to see your site in action, run Hugo's built-in local server. 
 
-## Ported By
-**Steve Francia**
-- <https://github.com/spf13>
-- <https://twitter.com/spf13>
+    $ hugo server -w
+
+Now enter [`localhost:1313`](//localhost:1313) in the address bar of your browser.
+
+
+## Contributing
+
+Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/digitalcraftsman/hugo-strata-theme/issues) to let me know. Or make directly a [pull request](//github.com/digitalcraftsman/hugo-strata-theme/pulls).
+
 
 ## License
 
-Open sourced under the [MIT license](LICENSE.md).
+This theme is released under the Creative Commons Attribution 3.0 Unported  License. For more information read the [License](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/LICENSE.md).
 
-<3
+
+## Annotations
+
+Thanks to [Steve Francia](//github.com/spf13) for creating [Hugo](//gohugo.io) and the awesome community around the project.

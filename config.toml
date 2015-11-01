@@ -7,22 +7,119 @@ theme = "tzwl"
 	name = "Ewout Prangsma"
 	email = "info@teamzwitserleven.nl"
 
-[Permalinks]
-	#blog = "/:year/:month/:filename/"
-	#code = "/:filename/"
-
-[Taxonomies]
-	tag = "tags"
-	series = "series"
-	series-desc = "series-desc"
-
 [params]
 	description = "Trein plezier in smallspoor"
 	github = "https://github.com/teamzwitserleven"
-	theme = "theme-base-0b"
+	theme = ""
 
-[[menu.main]]
-    name = "Foto's"
-    pre = "<i class='fa fa-road'></i>"
-    weight = -100
-    url = "/photos/"
+	[params.sidebar]
+		avatar = "swiss_flag.png"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "**Team Zwitserleven**,<br> trein plezier in smalspoor."
+		# The icons will be shown if you enter your username
+		twitter = ""
+		github = ""
+		dribbble = ""
+
+		copyright = [
+			"&copy; Team Zwitserleven"
+		]
+
+
+	[params.about]
+		title = "Team Zwitserleven"
+		content = [
+			"Klaterende bergbeken met koud kraakhelder water. De frisse geur van kilometers lange dennenbossen en hoge bergen met besneeuwde toppen. Wie wordt niet betoverd door het berglandschap van de Alpen.",
+			"Zo ook het team Zwitserleven (TZL). Zij besloten enkele jaren geleden, om de Zwitserse bergwereld te nemen als voorbeeld voor een nieuwe modelbaan. Gekozen werd voor een berglandschap met daarin een smalspoorbaan naar voorbeeld van de Rhaetische Bahn, afkomstig uit het oost-Zwitserse kanton Graubunden. Het betreft een segmentbaan uit 5 delen, zodat we ermee naar tentoonstellingen kunnen. Er is een evenwichtige balans gezocht tussen een smalspoorbaan en berglandschap.<br> Het is geen natuurgetrouwe omzetting van een gedeelte van de Zwitserse bergwereld in model. Wel komen enkele typische elementen uit Oost-Zwitserland tot uiting.",
+		]
+
+	[params.baan]
+		title = "Baan gegevens"
+		content = [
+			"De lay-outtekening laat zien, dat de smalspoorbaan de vorm heeft van een zogenaamd ‘dubbelgevouwen hondenbot”. Hierin zijn een typisch Zwitsers smalspoorstation met bijbehorend dorp, en een hoge steenboogbrug opgenomen. Middels 2 spiralen wordt een hoogteverschil van 50 cm overwonnen. De 2 schaduwstations zorgen voor een afwisselend treinbedrijf. Hierbij is schaduwstation 2 onder schaduwstation 1 gesitueerd. Het Faller Car-system laat het dorp verder tot leven komen."
+		]
+
+		[[params.baan.gallery]]
+			image = "2015-604.jpg"
+			thumb = "2015-604.jpg"
+			title = "Baan layout"
+			description = ""
+
+		[[params.baan.gallery]]
+			image = "2015-609.jpg"
+			thumb = "2015-609.jpg"
+			title = "Spiraal constructie"
+			description = ""
+
+	[params.news]
+		title = "Nieuws"
+		content = [
+			"Roermond 21, 22 nov 2015"
+		]
+
+	[params.portfolio]
+		title = "Recente foto's"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "2015-586.jpg"
+			thumb = "2015-586.jpg"
+			title = "Ge 4/4 over de brug"
+			description = ""
+
+		[[params.portfolio.gallery]]
+			image = "2015-577.jpg"
+			thumb = "2015-577.jpg"
+			title = "Bernina in station"
+			description = ""
+
+		[[params.portfolio.gallery]]
+			image = "2015-599.jpg"
+			thumb = "2015-599.jpg"
+			title = "Berg hut"
+			description = ""
+
+		[[params.portfolio.gallery]]
+			image = "2015-603.jpg"
+			thumb = "2015-603.jpg"
+			title = "'Krokodil' over de brug, met zicht op dorp en beek"
+			description = ""
+
+		[[params.portfolio.gallery]]
+			image = "2015-604.jpg"
+			thumb = "2015-604.jpg"
+			title = "Ge 4/4 over de beek het station uit"
+			description = ""
+
+
+	[params.contact]
+		title = "Contact"
+		content = "Voor vragen, verzoeken tot deelname aan tentoonstellingen of andere suggesties,<br> neem gerust contact met ons op."
+
+		address = [
+			"Grubbenvorst",
+			"Limburg",
+			"The Netherlands"
+		]
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "info@teamzwitserleven.nl"
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Naam"
+			email = "Email"
+			message = "Bericht"
+			submit = "Verstuur"
