@@ -1,4 +1,4 @@
-baseurl = "http://localhost/"
+baseurl = "http://www.teamzwitserleven.nl"
 languageCode = "nl-nl"
 title = "Team Zwitserleven"
 theme = "tzwl"
