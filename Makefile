@@ -1,3 +1,5 @@
+BUILD_PATH := $(shell pwd)/.gobuild
+HUGO := $(BUILD_PATH)/bin/hugo
 PUBLISH_PATH := $(shell pwd)/.publish
 COMMIT := $(shell git rev-parse --short HEAD)
 
@@ -8,8 +10,11 @@ all: build
 clean:
 	rm -Rf public $(PUBLISH_PATH)
 
-build:
-	hugo
+veryclean: 
+	rm -Rf public $(PUBLISH_PATH) $(BUILD_PATH)
+
+build: $(HUGO)
+	$(HUGO)
 
 publish: clean build
 	rm -Rf $(PUBLISH_PATH)
@@ -20,5 +25,8 @@ publish: clean build
 	cd $(PUBLISH_PATH) && git commit -m "Publish version $(COMMIT)"
 	cd $(PUBLISH_PATH) && git push
 
-watch:
-	hugo server -w
+watch: $(HUGO)
+	$(HUGO) server -w
+
+$(HUGO):
+	GOPATH=$(BUILD_PATH) go get -v github.com/spf13/hugo
