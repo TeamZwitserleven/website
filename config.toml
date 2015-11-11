@@ -40,8 +40,8 @@ theme = "tzwl"
 		]
 
 		[[params.baan.gallery]]
-			image = "2015-604.jpg"
-			thumb = "2015-604.jpg"
+			image = "baanlayout.jpg"
+			thumb = "baanlayout.jpg"
 			title = "Baan layout"
 			description = ""
 
