@@ -63,35 +63,52 @@ theme = "tzwl"
 		# The images and thumbnails are stored under static/images
 		# Create and change subfolders as you like
 		[[params.portfolio.gallery]]
-			image = "2015-586.jpg"
-			thumb = "2015-586.jpg"
-			title = "Ge 4/4 over de brug"
+			image = "2015-1657.jpg"
+			thumb = "2015-1657.jpg"
+			title = "Station"
 			description = ""
 
 		[[params.portfolio.gallery]]
-			image = "2015-577.jpg"
-			thumb = "2015-577.jpg"
-			title = "Bernina in station"
+			image = "2015-1660.jpg"
+			thumb = "2015-1660.jpg"
+			title = "605 op passeerspoor"
 			description = ""
 
 		[[params.portfolio.gallery]]
-			image = "2015-599.jpg"
-			thumb = "2015-599.jpg"
-			title = "Berg hut"
+			image = "2015-1676.jpg"
+			thumb = "2015-1676.jpg"
+			title = "Bergbeklimmers"
 			description = ""
 
 		[[params.portfolio.gallery]]
-			image = "2015-603.jpg"
-			thumb = "2015-603.jpg"
-			title = "'Krokodil' over de brug, met zicht op dorp en beek"
+			image = "2015-1678.jpg"
+			thumb = "2015-1678.jpg"
+			title = "Hotel aan de rivier"
 			description = ""
 
 		[[params.portfolio.gallery]]
-			image = "2015-604.jpg"
-			thumb = "2015-604.jpg"
-			title = "Ge 4/4 over de beek het station uit"
+			image = "2015-1679.jpg"
+			thumb = "2015-1679.jpg"
+			title = "Het dorp"
 			description = ""
 
+		[[params.portfolio.gallery]]
+			image = "2015-1663.jpg"
+			thumb = "2015-1663.jpg"
+			title = "605 in het station"
+			description = ""
+
+		[[params.portfolio.gallery]]
+			image = "2015-1670.jpg"
+			thumb = "2015-1670.jpg"
+			title = "Overzicht"
+			description = ""
+
+		[[params.portfolio.gallery]]
+			image = "2015-1664.jpg"
+			thumb = "2015-1664.jpg"
+			title = "Overzicht naar links"
+			description = ""
 
 	[params.contact]
 		title = "Contact"
