@@ -2,5 +2,10 @@
 	<header class="major">
 		{{ with .Site.Params.about.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
 	</header>
+	{{ if .Site.Params.news.content }}
+	<div class="news">
+	{{ range .Site.Params.news.content }}<p>{{ . | markdownify }}</p>{{ end }}
+	</div>
+	{{ end }}
 	{{ range .Site.Params.about.content }}<p>{{ . | markdownify }}</p>{{ end }}
 </section>

@@ -54,7 +54,8 @@ theme = "tzwl"
 	[params.news]
 		title = "Nieuws"
 		content = [
-			"Roermond 21, 22 nov 2015"
+			"Op 5 &amp; 6 november is onze baan te zien in Sittard.",
+			"Op 26 &amp; 27 november is onze baan te zien in Gangelt (DE).",
 		]
 
 	[params.portfolio]
