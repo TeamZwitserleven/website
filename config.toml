@@ -54,7 +54,6 @@ theme = "tzwl"
 	[params.news]
 		title = "Nieuws"
 		content = [
-			"Bezoek ons van 5 t/m 9 april in Dortmund (DE) op stand 4D20!",
 		]
 
 	[params.portfolio]
@@ -63,15 +62,15 @@ theme = "tzwl"
 		# The images and thumbnails are stored under static/images
 		# Create and change subfolders as you like
 		[[params.portfolio.gallery]]
-			image = "2015-1657.jpg"
-			thumb = "2015-1657.jpg"
+			image = "2017-394.jpg"
+			thumb = "2017-394.jpg"
 			title = "Station"
 			description = ""
 
 		[[params.portfolio.gallery]]
-			image = "2015-1660.jpg"
-			thumb = "2015-1660.jpg"
-			title = "605 op passeerspoor"
+			image = "2017-441.jpg"
+			thumb = "2017-441.jpg"
+			title = "Drukte op het station"
 			description = ""
 
 		[[params.portfolio.gallery]]
@@ -87,26 +86,26 @@ theme = "tzwl"
 			description = ""
 
 		[[params.portfolio.gallery]]
-			image = "2015-1679.jpg"
-			thumb = "2015-1679.jpg"
+			image = "2017-395.jpg"
+			thumb = "2017-395.jpg"
 			title = "Het dorp"
 			description = ""
 
 		[[params.portfolio.gallery]]
-			image = "2015-1663.jpg"
-			thumb = "2015-1663.jpg"
-			title = "605 in het station"
+			image = "2017-409.jpg"
+			thumb = "2017-409.jpg"
+			title = "Raften op de rivier"
 			description = ""
 
 		[[params.portfolio.gallery]]
-			image = "2015-1670.jpg"
-			thumb = "2015-1670.jpg"
+			image = "2017-516.jpg"
+			thumb = "2017-516.jpg"
 			title = "Overzicht"
 			description = ""
 
 		[[params.portfolio.gallery]]
-			image = "2015-1664.jpg"
-			thumb = "2015-1664.jpg"
+			image = "2017-419.jpg"
+			thumb = "2017-419.jpg"
 			title = "Overzicht naar links"
 			description = ""
 
