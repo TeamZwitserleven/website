@@ -36,7 +36,7 @@ theme = "tzwl"
 	[params.baan]
 		title = "Baan gegevens"
 		content = [
-			"De lay-outtekening laat zien, dat de smalspoorbaan de vorm heeft van een zogenaamd ‘dubbelgevouwen hondenbot”. Hierin zijn een typisch Zwitsers smalspoorstation met bijbehorend dorp, en een hoge steenboogbrug opgenomen. Middels 2 spiralen wordt een hoogteverschil van 50 cm overwonnen. De 2 schaduwstations zorgen voor een afwisselend treinbedrijf. Hierbij is schaduwstation 2 onder schaduwstation 1 gesitueerd. Het Faller Car-system laat het dorp verder tot leven komen."
+			"De lay-outtekening laat zien, dat de smalspoorbaan de vorm heeft van een zogenaamd ‘dubbelgevouwen hondenbot”. Hierin zijn een typisch Zwitsers smalspoorstation met bijbehorend dorp, en een hoge steenboogbrug opgenomen. Middels 2 spiralen wordt een hoogteverschil van 50 cm overwonnen. De 2 schaduwstations zorgen voor een afwisselend treinbedrijf. Hierbij is schaduwstation 2 onder schaduwstation 1 gesitueerd. Het Faller Car-system laat het dorp verder tot leven komen.",
 		]
 
 		[[params.baan.gallery]]
@@ -54,6 +54,12 @@ theme = "tzwl"
 	[params.news]
 		title = "Nieuws"
 		content = [
+			"Gezocht: Modelspoorders &amp; hobby ruimte.",
+			" ",
+			"Wij zijn op zoek naar uitbreiding van ons team. Ben je een gedreven modelspoorder en heb je iets met Zwitsers landschap, neem dan contact op.",
+			" ",
+			"Ook zijn wij op zoek naar een nieuwe hobby ruimte (regio Grubbenvorst, Noord Limburg) om aan onze baan verder te kunnen werken.",
+			"Interesse, of suggesties, email ons."
 		]
 
 	[params.portfolio]
