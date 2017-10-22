@@ -1,0 +1,17 @@
+{{ "<!-- TT's -->" | safeHTML }}
+<section id="tts" class="tts">
+	{{ with .Site.Params.tts.title }}<h2>{{ . }}</h2>{{ end }}
+	{{ range .Site.Params.tts.content }}<p>{{ . | markdownify }}</p>{{ end }}
+	<div class="row">
+		{{ range .Site.Params.tts.agenda }}
+		<article class="6u 12u$(xsmall) work-item">
+			<h3>
+				<a href="{{ .url }}" target="_blank">
+					{{ .title }}
+				</a>
+			</h3>
+			<p>{{ .datum | markdownify }} </p>		
+		</article>
+		{{ end }}
+	</div>
+</section>

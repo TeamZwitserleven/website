@@ -33,6 +33,19 @@ theme = "tzwl"
 			"Zo ook het team Zwitserleven (TZL). Zij besloten enkele jaren geleden, om de Zwitserse bergwereld te nemen als voorbeeld voor een nieuwe modelbaan. Gekozen werd voor een berglandschap met daarin een smalspoorbaan naar voorbeeld van de Rhaetische Bahn, afkomstig uit het oost-Zwitserse kanton Graubunden. Het betreft een segmentbaan uit 5 delen, zodat we ermee naar tentoonstellingen kunnen. Er is een evenwichtige balans gezocht tussen een smalspoorbaan en berglandschap.<br> Het is geen natuurgetrouwe omzetting van een gedeelte van de Zwitserse bergwereld in model. Wel komen enkele typische elementen uit Oost-Zwitserland tot uiting.",
 		]
 
+	[params.tts]
+		title = "U kunt onze baan binnenkort hier zien"
+		content = [
+		]
+		[[params.tts.agenda]]
+			datum ="13, 14 januari 2018"
+			title = "Nederlandse Modelspoordagen Rijswijk"
+			url = "http://modelspoordagen.nl/artikelen/home.html"
+		[[params.tts.agenda]]
+			datum = "22, 23 september 2018"
+			title = "Tentoonstelling MSKK Oostende"
+			url = "http://www.mskk.be"
+
 	[params.baan]
 		title = "Baan gegevens"
 		content = [
