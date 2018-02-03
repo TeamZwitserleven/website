@@ -38,10 +38,6 @@ theme = "tzwl"
 		content = [
 		]
 		[[params.tts.agenda]]
-			datum ="13, 14 januari 2018"
-			title = "Nederlandse Modelspoordagen Rijswijk"
-			url = "http://modelspoordagen.nl/artikelen/home.html"
-		[[params.tts.agenda]]
 			datum = "22, 23 september 2018"
 			title = "Tentoonstelling MSKK Oostende"
 			url = "http://www.mskk.be"
