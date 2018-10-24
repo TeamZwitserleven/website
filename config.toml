@@ -38,9 +38,9 @@ theme = "tzwl"
 		content = [
 		]
 		[[params.tts.agenda]]
-			datum = "22, 23 september 2018"
-			title = "Tentoonstelling MSKK Oostende"
-			url = "http://www.mskk.be"
+			datum = "23, 24 februari 2019"
+			title = "Tentoonstelling Zeeland hallen Goes"
+			url = "http://modelbouwshow.nl"
 
 	[params.baan]
 		title = "Baan gegevens"
@@ -63,12 +63,9 @@ theme = "tzwl"
 	[params.news]
 		title = "Nieuws"
 		content = [
-			"Gezocht: Modelspoorders &amp; hobby ruimte.",
+			"Gezocht: Modelspoorders",
 			" ",
-			"Wij zijn op zoek naar uitbreiding van ons team. Ben je een gedreven modelspoorder en heb je iets met Zwitsers landschap, neem dan contact op.",
-			" ",
-			"Ook zijn wij op zoek naar een nieuwe hobby ruimte (regio Grubbenvorst, Noord Limburg) om aan onze baan verder te kunnen werken.",
-			"Interesse, of suggesties, email ons."
+			"Wij zijn op zoek naar uitbreiding van ons team. Ben je een gedreven modelspoorder en heb je iets met Zwitsers landschap, neem dan contact op."
 		]
 
 	[params.portfolio]
