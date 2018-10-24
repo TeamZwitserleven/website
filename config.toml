@@ -42,6 +42,11 @@ theme = "tzwl"
 			title = "Tentoonstelling Zeeland hallen Goes"
 			url = "http://modelbouwshow.nl"
 
+		[[params.tts.agenda]]
+			datum = "Youtube"
+			title = "Kan je niet wachten, kijk dan vast hier"
+			url = "https://www.youtube.com/watch?v=usmaNo2K3VU"
+
 	[params.baan]
 		title = "Baan gegevens"
 		content = [
