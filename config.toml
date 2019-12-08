@@ -38,9 +38,9 @@ theme = "tzwl"
 		content = [
 		]
 		[[params.tts.agenda]]
-			datum = "23, 24 februari 2019"
-			title = "Tentoonstelling Zeeland hallen Goes"
-			url = "http://modelbouwshow.nl"
+			datum = "14, 15, 16 februari 2020"
+			title = "16. Erlebnis Modellbahn 2020. Dresden (DE)"
+			url = "https://www.mec-pirna.de/erlebnis-modellbahn-2020"
 
 		[[params.tts.agenda]]
 			datum = "Youtube"
@@ -68,9 +68,10 @@ theme = "tzwl"
 	[params.news]
 		title = "Nieuws"
 		content = [
-			"Gezocht: Modelspoorders",
+			"Gezocht: Modelspoorders in regio Venlo",
 			" ",
-			"Wij zijn op zoek naar uitbreiding van ons team. Ben je een gedreven modelspoorder en heb je iets met Zwitsers landschap, neem dan contact op."
+			"Wij zijn op zoek naar uitbreiding van ons team, zowel bouwers als hulp bij tentoonstellingen.",
+			"Ben je een gedreven modelspoorder en heb je iets met Zwitsers landschap, neem dan contact op.",
 		]
 
 	[params.portfolio]
