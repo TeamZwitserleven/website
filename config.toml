@@ -34,9 +34,14 @@ theme = "tzwl"
 		]
 
 	[params.tts]
-		title = "U kunt onze baan binnenkort hier zien"
+		title = "Wij zijn in de afgelopen tijd te zien geweest op:"
 		content = [
 		]
+		[[params.tts.agenda]]
+			datum = "26, 27  november 2022"
+			title = "Modell Eisenbahn Freunde Gangelt (DE)"
+			url = "https://www.mef-gangelt.de"
+
 		[[params.tts.agenda]]
 			datum = "14, 15, 16 februari 2020"
 			title = "16. Erlebnis Modellbahn 2020. Dresden (DE)"
@@ -44,7 +49,7 @@ theme = "tzwl"
 
 		[[params.tts.agenda]]
 			datum = "Youtube"
-			title = "Kan je niet wachten, kijk dan vast hier"
+			title = "Wil je nu van onze baan genieten, kijk dan hier"
 			url = "https://www.youtube.com/watch?v=usmaNo2K3VU"
 
 	[params.baan]
@@ -68,10 +73,10 @@ theme = "tzwl"
 	[params.news]
 		title = "Nieuws"
 		content = [
-			"Gezocht: Modelspoorders in regio Venlo",
+			"Welkom in het Albula dal",
 			" ",
-			"Wij zijn op zoek naar uitbreiding van ons team, zowel bouwers als hulp bij tentoonstellingen.",
-			"Ben je een gedreven modelspoorder en heb je iets met Zwitsers landschap, neem dan contact op.",
+			"Wij zijn hard bezig met onze nieuwe modelspoor baan. De Albula baan.",
+			"Binnenkort kun je de ontwikkeling van onze nieuwe baan hier volgen.",
 		]
 
 	[params.portfolio]
