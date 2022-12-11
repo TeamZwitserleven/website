@@ -2,3 +2,4 @@ public
 .DS_Store
 .publish
 .gobuild
+.hugo_build.lock

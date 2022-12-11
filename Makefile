@@ -33,4 +33,4 @@ watch: $(HUGO)
 	$(HUGO) server -w
 
 $(HUGO):
-	go install github.com/gohugoio/hugo@latest
+	GOPATH=$(BUILD_PATH) go install github.com/gohugoio/hugo@latest
