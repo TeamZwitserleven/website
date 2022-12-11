@@ -15,6 +15,7 @@ veryclean:
 
 build: $(HUGO)
 	$(HUGO)
+	echo "www.teamzwitserleven.nl" > public/CNAME
 
 publish: clean build
 	rm -Rf $(PUBLISH_PATH)
