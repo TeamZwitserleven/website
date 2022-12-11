@@ -33,4 +33,4 @@ watch: $(HUGO)
 	$(HUGO) server -w
 
 $(HUGO):
-	go install github.com/spf13/hugo
+	go install github.com/spf13/hugo@latest
