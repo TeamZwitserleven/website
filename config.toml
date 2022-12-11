@@ -75,13 +75,44 @@ theme = "tzwl"
 		content = [
 			"Welkom in het Albula dal",
 			" ",
-			"Wij zijn hard bezig met onze nieuwe modelspoor baan. De Albula baan.",
+			"Wij zijn hard bezig met onze nieuwe modelspoor baan. [De Albula baan](#gallery2).",
 			"Binnenkort kun je de ontwikkeling van onze nieuwe baan hier volgen.",
 			" ",
 			"11 december, 2022: Het spoor heeft de top van het Albula dal bereikt!"
 		]
 
+	[params.portfolio2]
+		id = "gallery2"
+		title = "Onze nieuwe baan in aanbouw: de Albula baan"
+		# The images and thumbnails are stored under static/images
+
+		[[params.portfolio2.gallery]]
+			image = "signal-2022-11-06-131204_002.jpeg"
+			thumb = "signal-2022-11-06-131204_002.jpeg"
+			title = "Brug in aanbouw"
+			description = ""
+
+		[[params.portfolio2.gallery]]
+			image = "signal-2022-11-20-174121.jpeg"
+			thumb = "signal-2022-11-20-174121.jpeg"
+			title = "Brug wordt \"gemetseld\""
+			description = ""
+
+
+		[[params.portfolio2.gallery]]
+			image = "signal-2022-11-19-204828_003.jpeg"
+			thumb = "signal-2022-11-19-204828_003.jpeg"
+			title = "Vele lagen spoor in de berg"
+			description = ""
+
+		[[params.portfolio2.gallery]]
+			image = "top-bereikt.jpeg"
+			thumb = "top-bereikt.jpeg"
+			title = "Spoor bereikt hoogste punt van het Albula dal"
+			description = ""
+
 	[params.portfolio]
+		id = "gallery"
 		title = "Recente foto's"
 
 		# The images and thumbnails are stored under static/images

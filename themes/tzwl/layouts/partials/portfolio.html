@@ -1,8 +1,8 @@
 {{ "<!-- portfolio -->" | safeHTML }}
-<section id="gallery" class="gallery">
-	{{ with .Site.Params.portfolio.title }}<h2>{{ . }}</h2>{{ end }}
+<section id="{{ .id }}" class="gallery">
+	{{ with .title }}<h2>{{ . }}</h2>{{ end }}
 	<div class="row">
-		{{ range .Site.Params.portfolio.gallery }}
+		{{ range .gallery }}
 		<article class="6u 12u$(xsmall) work-item">
 			<a href="{{ add "images/" .image | relURL }}" class="image fit thumb">
 				<img src="{{ add "images/" .thumb | relURL }}" alt="" />

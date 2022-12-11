@@ -6,8 +6,13 @@
 		<div id="main">
 			{{ partial "about" . }}
 			{{ partial "tts" . }}
-			{{ partial "portfolio" . }}
+			{{ with .Site.Params.portfolio }}
+				{{ partial "portfolio" . }}
+			{{ end }}
 			{{ partial "baan" . }}
+			{{ with .Site.Params.portfolio2 }}
+				{{ partial "portfolio" . }}
+			{{ end }}
 			{{ partial "contact" . }}
 		</div>
 
