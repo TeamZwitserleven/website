@@ -1,5 +1,8 @@
 name: Build and Deploy
-on: [push]
+on:
+  push:
+    branches:
+      - master
 permissions:
   contents: write
 jobs:
@@ -17,6 +20,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          branch: master
           folder: public
           repository-name: TeamZwitserleven/TeamZwitserleven.github.io
           token: ${{ secrets.DEPLOYMENT_TOKEN }}
